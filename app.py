@@ -1,7 +1,7 @@
 import streamlit as st
 import json
 import time
-#import slackweb
+import slackweb
 import requests
 from datetime import datetime  
 import sys
@@ -10,8 +10,9 @@ import webbrowser
 #アクセストークン取得
 token_btn = st.button("アクセストークンを取得する")
 if token_btn:
-    webbrowser.open("")
+    webbrowser.open("https://dev.fitbit.com/build/reference/web-api/troubleshooting-guide/oauth2-tutorial/?clientEncodedId=23PGQV&redirectUri=https://localhost&applicationType=PERSONAL")
 
+Slack_url = st.text_input('SlackのURLを入力してください')
 ACCESS_TOKEN = st.text_input('取得したアクセストークンを入力して、分析を開始してください') 
 
 #プログラムを動かす
@@ -42,14 +43,14 @@ def fetch_heart_rate():
             
             if heart_rates:
                 average_heart_rate = sum(heart_rates) / len(heart_rates)
-                st.text("更新時間:" + get_current_time()) #データ取得時間を表示
+                st.subheader("更新時間:" + get_current_time()) #データ取得時間を表示
                 st.text(f"最新の心拍数データ:{[entry['time'] for entry in latest]}")
                 st.text(f"平均心拍数:{average_heart_rate:.2f}")
                 
                 if average_heart_rate > 80:
                     st.text("☆心拍数の平均値が80を超えています! Slackにも通知をしました。")
-                    #slack = slackweb.Slack(url="")
-                    #slack.notify(text="飲みすぎていませんか？？")  # アラート内容
+                    slack = slackweb.Slack(url=Slack_url)
+                    slack.notify(text="飲みすぎていませんか？？")  # アラート内容
             else:
                 st.text("データが見つかりませんでした。")
 
