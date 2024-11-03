@@ -15,7 +15,9 @@ ACCESS_TOKEN = st.text_input('取得したアクセストークンを入力し�
 start_btn = st.button("分析開始")
 
 #GoogleAPIキー
-GOOGLE_API_KEY = "AIzaSyAguWH3Q57gYvNx91lbDbOQMEx6QxZ-dgM" 
+
+#  AIzaSyAguWH3Q57gYvNx91lbDbOQMEx6QxZ-dgM
+GOOGLE_API_KEY = st.text_input("Google API KEY") 
 
 #現在時刻取得
 def get_current_time():
