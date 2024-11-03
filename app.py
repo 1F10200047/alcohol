@@ -10,7 +10,7 @@ import webbrowser
 #アクセストークン取得
 token_btn = st.button("アクセストークンを取得する")
 if token_btn:
-    webbrowser.open("https://dev.fitbit.com/build/reference/web-api/troubleshooting-guide/oauth2-tutorial/?clientEncodedId=23PGQV&redirectUri=https://localhost&applicationType=PERSONAL")
+    webbrowser.open("")
 
 ACCESS_TOKEN = st.text_input('取得したアクセストークンを入力して、分析を開始してください') 
 
@@ -48,7 +48,7 @@ def fetch_heart_rate():
                 
                 if average_heart_rate > 80:
                     st.text("☆心拍数の平均値が80を超えています! Slackにも通知をしました。")
-                    #slack = slackweb.Slack(url="https://hooks.slack.com/services/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")
+                    #slack = slackweb.Slack(url="")
                     #slack.notify(text="飲みすぎていませんか？？")  # アラート内容
             else:
                 st.text("データが見つかりませんでした。")
