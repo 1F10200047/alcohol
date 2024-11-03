@@ -1,6 +1,6 @@
 import streamlit as st
 import time
-import slackweb
+#import slackweb
 import requests
 from datetime import datetime  
 
@@ -43,8 +43,8 @@ def fetch_heart_rate():
                 
                 if average_heart_rate > 80:
                     st.text("☆心拍数の平均値が80を超えています! Slackにも通知をしました。")
-                    slack = slackweb.Slack(url=Slack_url)
-                    slack.notify(text="飲みすぎていませんか？？")  # アラート内容
+                    #slack = slackweb.Slack(url=Slack_url)
+                    #slack.notify(text="飲みすぎていませんか？？")  # アラート内容
             else:
                 st.text("データが見つかりませんでした。")
 
