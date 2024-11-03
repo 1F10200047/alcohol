@@ -12,7 +12,6 @@ ACCESS_TOKEN = st.text_input('取得したアクセストークンを入力し�
 
 #プログラムを動かす
 start_btn = st.button("分析開始")
-#stop_btn = st.button("分析終了")
 
 #GoogleAPIキー
 GOOGLE_API_KEY = "AIzaSyAguWH3Q57gYvNx91lbDbOQMEx6QxZ-dgM" 
@@ -99,6 +98,4 @@ def main_loop():
 if __name__ == "__main__":
     if start_btn:
         main_loop()
-    #elif stop_btn:
-        #sys.exit()
         

@@ -4,24 +4,24 @@ attrs==24.2.0
 backports.zoneinfo==0.2.1
 beautifulsoup4==4.10.0
 blinker==1.8.2
-Brotli @ file:///C:/b/abs_3d36mno480/croot/brotli-split_1714483178642/work
+Brotli==1.0.9
 cachetools==5.5.0
-certifi @ file:///C:/b/abs_7bbxxprxir/croot/certifi_1720453609121/work/certifi
-cffi @ file:///C:/b/abs_78eb1_vq6z/croot/cffi_1714483206096/work
-charset-normalizer @ file:///croot/charset-normalizer_1721748349566/work
+certifi==2024.7.4
+cffi==1.16.0
+charset-normalizer==3.3.2
 click==8.1.7
 colorama==0.4.6
 conda==4.10.3
-conda-package-handling @ file:///C:/b/abs_831_pypuuz/croot/conda-package-handling_1718138287790/work
-conda_package_streaming @ file:///C:/b/abs_fe6zb0_j8_/croot/conda-package-streaming_1718136098642/work
-cryptography @ file:///C:/b/abs_97lgskwerx/croot/cryptography_1714664736250/work
+conda-package-handling==2.3.0
+conda_package_streaming==0.10.0
+cryptography==42.0.5
 cycler==0.11.0
 Django==4.0.1
 django-bootstrap4==21.2
 fonttools==4.32.0
 gitdb==4.0.11
 GitPython==3.1.43
-idna @ file:///C:/b/abs_aad84bnnw5/croot/idna_1714398896795/work
+idna==3.7
 importlib_resources==6.4.5
 Jinja2==3.1.4
 jsonschema==4.23.0
@@ -38,24 +38,26 @@ numpy==1.22.3
 packaging==21.3
 pandas==2.0.3
 Pillow==9.1.0
+pip==24.0
 pkgutil_resolve_name==1.3.10
 protobuf==5.28.3
 pyarrow==17.0.0
-pycosat @ file:///C:/b/abs_5csdern___/croot/pycosat_1714513102923/work
-pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+pycosat==0.6.6
+pycparser==2.21
 pydeck==0.9.1
 Pygments==2.18.0
-pyOpenSSL @ file:///C:/b/abs_baj0aupznq/croot/pyopenssl_1708380486701/work
+pyOpenSSL==24.0.0
 pyparsing==3.0.8
-PySocks @ file:///C:/ci/pysocks_1605287845585/work
+PySocks==1.7.1
 python-dateutil==2.8.2
 pytz==2024.2
 pywin32==305.1
 referencing==0.35.1
-requests @ file:///C:/b/abs_9frifg92q2/croot/requests_1721410901096/work
+requests==2.32.3
 rich==13.9.4
 rpds-py==0.20.1
-ruamel-yaml-conda @ file:///C:/ci/ruamel_yaml_1616016967756/work
+ruamel-yaml-conda==0.15.100
+setuptools==69.5.1
 six==1.16.0
 slackweb==1.0.5
 smmap==5.0.1
@@ -68,8 +70,9 @@ toml==0.10.2
 tornado==6.4.1
 typing_extensions==4.12.2
 tzdata==2024.2
-urllib3 @ file:///C:/b/abs_a7hvzm4y95/croot/urllib3_1718912661242/work
+urllib3==2.2.2
 watchdog==4.0.2
-win-inet-pton @ file:///C:/ci/win_inet_pton_1605306167264/work
+wheel==0.43.0
+win-inet-pton==1.1.0
 zipp==3.20.2
-zstandard @ file:///C:/b/abs_e46tf0_91g/croot/zstandard_1714678303615/work
+zstandard==0.22.0
