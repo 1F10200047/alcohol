@@ -11,8 +11,7 @@ st.markdown('<a href="https://dev.fitbit.com/build/reference/web-api/troubleshoo
 #Slack_url = st.text_input('SlackのURLを入力してください')
 ACCESS_TOKEN = st.text_input('取得したアクセストークンを入力して、分析を開始してください') 
 
-#  AIzaSyAguWH3Q57gYvNx91lbDbOQMEx6QxZ-dgM
-GOOGLE_API_KEY = st.text_input("Google API KEY")
+GOOGLE_API_KEY = "AIzaSyAguWH3Q57gYvNx91lbDbOQMEx6QxZ-dgM"
 
 #プログラムを動かす
 start_btn = st.button("分析開始")
