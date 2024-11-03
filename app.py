@@ -3,6 +3,7 @@ import time
 #import slackweb
 import requests
 from datetime import datetime  
+import pytz
 
 #アクセストークン取得
 st.markdown('<a href="https://dev.fitbit.com/build/reference/web-api/troubleshooting-guide/oauth2-tutorial/?clientEncodedId=23PGQV&redirectUri=https://localhost&applicationType=PERSONAL" target="_blank">アクセストークンを取得する</a>', unsafe_allow_html=True)
@@ -18,7 +19,10 @@ GOOGLE_API_KEY = "AIzaSyAguWH3Q57gYvNx91lbDbOQMEx6QxZ-dgM"
 
 #現在時刻取得
 def get_current_time():
-    return datetime.now().strftime("%H時%M分")  
+    utc_now = datetime.now(pytz.utc)
+    japan_tz = pytz.timezone('Asia/Tokyo')
+    japan_time = utc_now.astimezone(japan_tz)
+    return japan_time.strftime("%H時%M分")  
 
 #心拍数取得
 def fetch_heart_rate():
