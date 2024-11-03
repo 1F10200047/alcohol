@@ -1,11 +1,8 @@
 import streamlit as st
-import json
 import time
 import slackweb
 import requests
 from datetime import datetime  
-import sys
-import webbrowser
 
 #アクセストークン取得
 st.markdown('<a href="https://dev.fitbit.com/build/reference/web-api/troubleshooting-guide/oauth2-tutorial/?clientEncodedId=23PGQV&redirectUri=https://localhost&applicationType=PERSONAL" target="_blank">アクセストークンを取得する</a>', unsafe_allow_html=True)
