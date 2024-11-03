@@ -8,9 +8,7 @@ import sys
 import webbrowser
 
 #アクセストークン取得
-token_btn = st.button("アクセストークンを取得する")
-if token_btn:
-    st.markdown('<a href="https://dev.fitbit.com/build/reference/web-api/troubleshooting-guide/oauth2-tutorial/?clientEncodedId=23PGQV&redirectUri=https://localhost&applicationType=PERSONAL" target="_blank">Click here to go to the URL</a>', unsafe_allow_html=True)
+st.markdown('<a href="https://dev.fitbit.com/build/reference/web-api/troubleshooting-guide/oauth2-tutorial/?clientEncodedId=23PGQV&redirectUri=https://localhost&applicationType=PERSONAL" target="_blank">アクセストークンを取得する</a>', unsafe_allow_html=True)
 
 Slack_url = st.text_input('SlackのURLを入力してください')
 ACCESS_TOKEN = st.text_input('取得したアクセストークンを入力して、分析を開始してください') 
