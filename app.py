@@ -47,7 +47,7 @@ def fetch_heart_rate():
                 st.text(f"最新の心拍数データ:{[entry['time'] for entry in latest]}")
                 st.text(f"平均心拍数:{average_heart_rate:.2f}")
                 
-                if average_heart_rate > 70:
+                if average_heart_rate > 80:
                     st.text("☆心拍数の平均値が80を超えています! Slackにも通知をしました。")
                     slack = slackweb.Slack(url=Slack_url)
                     slack.notify(text="飲みすぎていませんか？？")  # アラート内容
